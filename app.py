@@ -56,11 +56,7 @@ if uploaded_file is not None:
     st.image(processed_image, caption='Imagem Processada', use_column_width=True)
 
     st.write("Textos Detectados:")
-
-    if detected_texts:
-        for text, confidence in detected_texts:
-            st.write(f"**Texto:** {text}")
-            st.write(f"**Confiança:** {confidence*100:.2f}%")
-    else:
-        st.write("**Texto não reconhecido**")
+    for text, confidence in detected_texts:
+        st.write(f"**Texto:** {text}")
+        st.write(f"**Confiança:** {confidence*100:.2f}%")
 

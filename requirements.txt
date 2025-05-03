@@ -1,4 +1,7 @@
-opencv-python-headless
+opencv-python-headless==4.9.0.80
 pytesseract
 matplotlib
-ultralytics
+ultralytics==8.1.25
+Pillow
+numpy
+streamlit
